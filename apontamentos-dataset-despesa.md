@@ -84,7 +84,7 @@ h) é preciso haver mudança de leiaute e/ou partição de arquivos?
 
 		[ ] ``unidade_orc``: 2 pares de colunas id/nome para adminisrtação e grupo de administração (ex.: autarquias e fundações == fundação), SEM NECESSIDADE DA QUASE DUPLICIDADE = EXISTE ESSE FILTRO NA INTERFACE??
 
-		[v] ``unidade_orc``: adição da descrição dos nomes das colunas ``id_administracao`` e ``administracao`` (categoria de pessoa jurídica)
+		[v] ``unidade_orc``: adição da descrição dos nomes das colunas ``grupo_administracao`` e ``administracao`` (categoria de pessoa jurídica)
 
 		[ ] ``favorecido``: não há uma coluna para o nome que corresponde ao tipo de documento (p. ex., identidade, cpf, cnpj, passaporte, etc)
 
@@ -111,4 +111,8 @@ h) é preciso haver mudança de leiaute e/ou partição de arquivos?
 
 
 
-* 
+* referências:
+
+	- [dicionário de dados do portal de Curitiba](https://mid.curitiba.pr.gov.br/dadosabertos/BaseReceitaDespesa/2016-04-07_Despesas_-_Dicionario_de_Dados.xlsx) 
+
+	- [dicionário de dados do portal de Alagoas](http://transparencia.al.gov.br/portal/download-de-dados/despesas/comparativo-de-despesa)

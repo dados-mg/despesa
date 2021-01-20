@@ -581,7 +581,7 @@
             "type": "string",
             "format": "default",
             "title": "Nome do grupo de administração",
-            "description": "Nome do grupo da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes."
+            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes."
           },
           {
             "name": "id_administracao",
