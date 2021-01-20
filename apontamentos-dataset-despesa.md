@@ -5,10 +5,16 @@
 * com o que temos atualmente (CKAN antigo/diagrama de relacionamento X Portal X armazám)
 
 	a) todas as tabelas (dimensão e fato) estão representadas no datapackage/schema?
+	
 	b) há descrição dos nomes das tabelas e de suas colunas no tooltip do Portal/Armazém?
+	
 	c) os valores dos dados nas colunas expressam o que os conceitos querem dizer?
-	d) as propriedades dos valores podem ser expressas no datapackage/schema (padrões de codificação como número de algarismos tipo minLenght, maxLenght e range)?
+	
+	d) as propriedades dos valores podem ser expressas no datapackage/schema (padrões de codificação como 
+	número de algarismos tipo minLenght, maxLenght e range)?
+	
 	e) os valores, quando reunidos por tabela dinâmica e procv, levam a um resultado esperado e coerente (com os do Portal?)
+	
 	f) a consulta e download dos arquivos é prática (tamanho, leiaute)?
 
 * com o GRP:
@@ -45,26 +51,28 @@ h) é preciso haver mudança de leiaute e/ou partição de arquivos?
 
 	* 1.1. [v] corrigir ``name`` na tabela ``unidade-prcamentaria``, 
 	
-	* 1.2. [ ] verificar descrição (fonte = verificar tooltip tabela mapa e armazém) de cada tabela e fazer de cada coluna = FALTA TABELA ``empenho``
+	* 1.2. 
 
-		   [ ] verificar a que correspondem os algarismos 0 e 9 na tabela de categoria econômica, previsão no Portal, no Armazém e no GRP
+		[ ] verificar descrição (fonte = verificar tooltip tabela mapa e armazém) de cada tabela e fazer de cada coluna = FALTA TABELA ``empenho``
+
+		[ ] verificar a que correspondem os algarismos 0 e 9 na tabela de categoria econômica, previsão no Portal, no Armazém e no GRP
 			
 
-		   [v] descrição da subfunção modificada: 'identifica a natureza básica das ações que se aglutinam **em funções**' em vez de 'identifica a natureza básica das ações que se aglutinam **em torno de** funções'
+		[v] descrição da subfunção modificada: 'identifica a natureza básica das ações que se aglutinam **em funções**' em vez de 'identifica a natureza básica das ações que se aglutinam **em torno de** funções'
 
-		   [ ] coluna ``mes`` da tabela ``tempo_diario`` não apresenta dois algarismos para os meses de janeiro a setembro (ex. 1 e 9 em vez de 01 e 09)
+		[ ] coluna ``mes`` da tabela ``tempo_diario`` não apresenta dois algarismos para os meses de janeiro a setembro (ex. 1 e 9 em vez de 01 e 09)
 
-		   [v] qual a descrição da ``tipo_documento``?? descrição sugerida: _´tipo do documento que identifica as operações possíveis no processo de execução da despesa´_
+		[v] qual a descrição da ``tipo_documento``?? descrição sugerida: _´tipo do documento que identifica as operações possíveis no processo de execução da despesa´_
 
-		   [ ] ``tipo_documento``: nomes de valores possíveis com abreviações (op pendente) = VERIFICAR COMPLETUDE E CLAREZA DOS CONCEITOS DESSES VALORES POSSÍVEIS
+		[ ] ``tipo_documento``: nomes de valores possíveis com abreviações (op pendente) = VERIFICAR COMPLETUDE E CLAREZA DOS CONCEITOS DESSES VALORES POSSÍVEIS
 
-		   [ ] ``unidade_orc``: 2 pares de colunas id/nome para adminisrtação e grupo de administração (ex.: autarquias e fundações == fundação), SEM NECESSIDADE DA QUASE DUPLICIDADE = EXISTE ESSE FILTRO NA INTERFACE??
+		[ ] ``unidade_orc``: 2 pares de colunas id/nome para adminisrtação e grupo de administração (ex.: autarquias e fundações == fundação), SEM NECESSIDADE DA QUASE DUPLICIDADE = EXISTE ESSE FILTRO NA INTERFACE??
 
-		   [v] ``unidade_orc``: adição da descrição dos nomes das colunas ``id_administracao`` e ``administracao`` (categoria de pessoa jurídica)
+		[v] ``unidade_orc``: adição da descrição dos nomes das colunas ``id_administracao`` e ``administracao`` (categoria de pessoa jurídica)
 
-		   [ ] ``favorecido``: não há uma coluna para o nome que corresponde ao tipo de documento (p. ex., identidade, cpf, cnpj, passaporte, etc)
+		[ ] ``favorecido``: não há uma coluna para o nome que corresponde ao tipo de documento (p. ex., identidade, cpf, cnpj, passaporte, etc)
 
-		   [ ] passar misingValues para colunas correspondentes, em vez de deixar constar nos arquivos dos recursos como um todo
+		[ ] passar misingValues para colunas correspondentes, em vez de deixar constar nos arquivos dos recursos como um todo
 
 	- padrão de descrição: 
 
