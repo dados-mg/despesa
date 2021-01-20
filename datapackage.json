@@ -26,7 +26,7 @@
             "type": "string",
             "format": "default",
             "title": "Código da Ação",
-            "description": "Código da Ação"
+            "description": "Código da Ação. Contém 4 algarismos que podem variar pelo ano de exercício de cada ação"
           },
           {
             "name": "nome",
@@ -142,14 +142,14 @@
             "type": "integer",
             "format": "default",
             "title": "ID da fonte ",
-            "description": "Chave numérica que relaciona os dados da tabela de  fonte de recursos"
+            "description": "Chave numérica que relaciona os dados da tabela de fonte de recursos"
           },
           {
             "name": "cd_fonte",
             "type": "integer",
             "format": "default",
             "title": "Código da Fonte",
-            "description": "Código da fonte de recursos"
+            "description": "Código da fonte de recursos. Conteem dois algarismos."
           },
           {
             "name": "nome",
@@ -230,21 +230,21 @@
             "type": "integer",
             "format": "default",
             "title": "Código do grupo da despesa",
-            "description": "Código do grupo da despesa"
+            "description": "Código do grupo da despesa. Valores possíveis: 1,2,3,4,5 ou 6."
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome do grupo da despesa",
-            "description": "Classificação da despesa que agrega elementos de despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.)."
+            "description": "Classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.)."
           }
         ]
       },
       "title": "Grupo da despesa",
       "format": "text/csv",
       "encoding": "utf-8",
-      "description": "Tabela que contém dados da classificação da despesa que agrega elementos de despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.).",
+      "description": "Tabela que contém dados da classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.).",
       "missingValues": ["NA", ""],
       "dialect": {
       "delimiter": ";"}
@@ -274,14 +274,14 @@
             "type": "string",
             "format": "default",
             "title": "Nome do item de despesa",
-            "description": "Desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc)."
+            "description": "Classificação da despesa quanto ao desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc)."
           }
         ]
       },
       "title": "Item de despesa",
       "format": "text/csv",
       "encoding": "utf-8",
-      "description": "Tabela que contém dados sobre o item de despesa, que é o desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc).",
+      "description": "Tabela que contém dados sobre o item de despesa, que é a classificação da despesa quanto ao desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc).",
       "missingValues": ["NA", ""],
       "dialect": {
       "delimiter": ";"}
@@ -304,21 +304,21 @@
             "type": "integer",
             "format": "default",
             "title": "Código da modalidade de aplicação",
-            "description": "Código da modalidade de aplicação"
+            "description": "Código da modalidade de aplicação. Valores possíveis: 20, 40, 41, 50, 70, 90 ou 91."
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome da modalidade de aplicação",
-            "description": "Indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação."
+            "description": "Classificação que indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação."
           }
         ]
       },
       "title": "Modalidade de aplicação",
       "format": "text/csv",
       "encoding": "utf-8",
-      "description": "Tabela com dados da modalidade de aplicação, que Indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação.",
+      "description": "Tabela com dados da modalidade de aplicação, que é a classificação que indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação.",
       "missingValues": ["NA", ""],
       "dialect": {
       "delimiter": ";"}
@@ -341,14 +341,14 @@
             "type": "integer",
             "format": "default",
             "title": "Código da procedência",
-            "description": "Código da procedência dos recursos"
+            "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9."
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome da procedência",
-            "description": "Nome da procedência dos recursos"
+            "description": "Nome que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc."
           }
         ]
       },
@@ -391,7 +391,7 @@
             "type": "string",
             "format": "default",
             "title": "Nome do programa",
-            "description": "Conjunto de ações para atender um problema ou demanda da sociedade."
+            "description": "Denominação do conjunto de ações para atender um problema ou demanda da sociedade."
           }
         ]
       },
@@ -435,14 +435,14 @@
             "type": "string",
             "format": "default",
             "title": "Nome da subfunção",
-            "description": "Identifica a natureza básica das ações que se aglutinam em torno das funções."
+            "description": "Identifica a natureza básica das ações que se aglutinam em funções."
           }
         ]
       },
       "title": "Subfunção",
       "format": "text/csv",
       "encoding": "utf-8",
-      "description": "Tabela com dados da subfunção, que identifica a natureza básica das ações que se aglutinam em torno das funções.",
+      "description": "Tabela com dados da subfunção, que identifica a natureza básica das ações que se aglutinam em funções.",
       "missingValues": ["NA", ""],
       "dialect": {
       "delimiter": ";"}
@@ -472,21 +472,21 @@
             "type": "integer",
             "format": "default",
             "title": "Dia",
-            "description": "Dia"
+            "description": "Dia no padrão dd"
           },
           {
             "name": "mes",
             "type": "integer",
             "format": "default",
             "title": "Mês",
-            "description": "Mês"
+            "description": "Mês no padrão mm"
           },
           {
             "name": "ano",
             "type": "integer",
             "format": "default",
             "title": "Ano",
-            "description": "Ano"
+            "description": "Ano no padrão aaaa"
           },
           {
             "name": "data_formatada",
@@ -523,14 +523,14 @@
             "type": "integer",
             "format": "default",
             "title": "Código do tipo do documento",
-            "description": "Código do tipo do documento"
+            "description": "Código do tipo do documento que identifica as operações possíveis no processo de execução da despesa"
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome do tipo do documento",
-            "description": "Nome do tipo do documento"
+            "description": "Nome do tipo do documento que identifica as operações possíveis no processo de execução da despesa"
           }
         ]
       },
@@ -543,7 +543,7 @@
       "delimiter": ";"}
     },
     {
-      "name": "dm-unidade-prcamentaria",
+      "name": "dm-unidade-orcamentaria",
       "path": "dm_unidade_orc.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -554,13 +554,6 @@
             "format": "default",
             "title": "ID da unidade orçamentária",
             "description": "Chave numérica que relaciona dados da tabela de Unidade Orçamentária"
-          },
-          {
-            "name": "sqa_unidade_orcam",
-            "type": "integer",
-            "format": "default",
-            "title": "SQA da unidade orçamentária",
-            "description": "SQA da unidade orçamentária"
           },
           {
             "name": "ano_exercicio",
@@ -580,24 +573,28 @@
             "name": "id_grupo_administracao",
             "type": "integer",
             "format": "default",
-            "title": "Id do grupo de administração"
+            "title": "Id do grupo de administração",
+            "description": "Código do grupo da administração. Valores possíveis: 1,2,4 ou 5"
           },
           {
-            "name": "grupo_admiistracao",
+            "name": "grupo_administracao",
             "type": "string",
             "format": "default",
-            "title": "Nome do grupo de administração"
+            "title": "Nome do grupo de administração",
+            "description": "Nome do grupo da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes."
           },
           {
             "name": "id_administracao",
             "type": "integer",
             "format": "default",
-            "title": "ID da administração"
+            "title": "ID da administração",
+            "description": "Código da administração. Valores possíveis: 1,2,3,4 ou 5"
           },
           {
             "name": "administracao",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquia, Fundação, Fundo ou Empresa Dependente."
           },
           {
             "name": "nome",
@@ -630,9 +627,11 @@
             "description": "Chave numérica que relaciona os dados da tabela de Favorecido"
           },
           {
-            "name": "SQA_favorecido",
+            "name": "nr_documento",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "title": "Número do documento ",
+            "description": "Número do documento do favorecido"
           },
           {
             "name": "tipo_documento",
@@ -640,13 +639,6 @@
             "format": "default",
             "title": "Tipo de documento ",
             "description": "Tipo de documento do favorecido"
-          },
-          {
-            "name": "nr_documento",
-            "type": "string",
-            "format": "default",
-            "title": "Número do documento ",
-            "description": "Número do documento do favorecido"
           },
           {
             "name": "Nome",
