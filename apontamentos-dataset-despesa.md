@@ -32,21 +32,37 @@ h) é preciso haver mudança de leiaute e/ou partição de arquivos?
 * 16 tabelas-dimensão e 1 fato:
 
 	1.tempo_diario
+	
 	2.funcao_desp
+	
 	3.subfuncao_desp
+	
 	4.acao
+	
 	5.programa
+	
 	6.procedencia
+	
 	7.empenho
+	
 	8.fonte
+	
 	9.modalidade_aplic
+	
 	10.categ_econ
+	
 	11.grupo_desp
+	
 	12.elemento_des
+	
 	13.item_desp
+	
 	14.favorecido
+	
 	15.tipo_documento 
+	
 	16.unidade_orc
+	
 	ft-despesa
 
 	* 1.1. [v] corrigir ``name`` na tabela ``unidade-prcamentaria``, 
