@@ -63,14 +63,18 @@
             "type": "integer",
             "format": "default",
             "title": "Código da Categoria Econômica",
-            "description": "Código da Categoria Econômica da despesa. Valores possíveis: 0, 3, 4, 9"
+            "description": "Código da Categoria Econômica da despesa. Valores possíveis: 0, 3, 4, 9",
+            "constraints": {
+        "enum": [0,3,4,9]}
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome da Categoria Econômica",
-            "description": "Classificação da despesa quanto ao impacto econômico que ela gera, podendo ser corrente (funcionamento dos órgãos, pagamentos dos servidores, etc) ou de capital (obras, equipamentos, etc)."
+            "description": "Classificação da despesa quanto ao impacto econômico que ela gera, podendo ser corrente (funcionamento dos órgãos, pagamentos dos servidores, etc) ou de capital (obras, equipamentos, etc).",
+            "constraints": {
+        "enum": ["DESPESAS CORRENTES", "DESPESAS DE CAPITAL"]}
           }
         ]
       },
@@ -230,14 +234,18 @@
             "type": "integer",
             "format": "default",
             "title": "Código do grupo da despesa",
-            "description": "Código do grupo da despesa. Valores possíveis: 1,2,3,4,5 ou 6."
+            "description": "Código do grupo da despesa. Valores possíveis: 1,2,3,4,5 ou 6.",
+            "constraints": {
+        "enum": [1,2,3,4,5,6]}
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome do grupo da despesa",
-            "description": "Classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.)."
+            "description": "Classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.).",
+            "constraints": {
+        "enum": ["PESSOAL E ENCARGOS SOCIAIS", "JUROS E ENCARGOS DA DIVIDA", "OUTRAS DESPESAS CORRENTES", "INVESTIMENTOS", "INVERSOES FINANCEIRAS", "AMORTIZACAO DA DIVIDA"]}
           }
         ]
       },
@@ -341,17 +349,28 @@
             "type": "integer",
             "format": "default",
             "title": "Código da procedência",
-            "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9."
+            "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9.",
+            "constraints": {
+        "enum": [1,2,3,4,5,6,7,8,9]}
           },
           {
             "name": "nome",
             "type": "string",
             "format": "default",
             "title": "Nome da procedência",
-            "description": "Nome que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc."
-          }
-        ]
+            "description": "Nome que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
+            "constraints": {
+        "enum": ["RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO",
+"RECURSOS RECEBIDOS DE OUTRA UNIDADE ORCAMENTARIA DO ORCAMENTO FISCAL PARA LIVRE UTILIZACAO",
+"RECURSOS RECEBIDOS PARA CONTRAPARTIDA",
+"RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA",
+"RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+"RECURSOS RECEBIDOS PARA CONTRAPARTIDA DE OPERACAO DE CREDITO",
+"RECURSOS RECEBIDOS PARA AUXILIOS DOENCA, FUNERAL, ALIMENTACAO, TRANSPORTE E FARDAMENTO",
+"RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+"RECURSOS RECEBIDOS PARA PRECATORIOS E SENTENCAS JUDICIAIS"]}
       },
+      {
       "title": "Procedência",
       "format": "text/csv",
       "encoding": "utf-8",
@@ -574,27 +593,35 @@
             "type": "integer",
             "format": "default",
             "title": "Id do grupo de administração",
-            "description": "Código do grupo da administração. Valores possíveis: 1,2,4 ou 5"
+            "description": "Código do grupo da administração. Valores possíveis: 1,2,4 ou 5",
+            "constraints": {
+        "enum": [1,2,4,5]}
           },
           {
             "name": "grupo_administracao",
             "type": "string",
             "format": "default",
             "title": "Nome do grupo de administração",
-            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes."
+            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes.",
+            "constraints": {
+        "enum": ["ADMINISTRACAO DIRETA", "AUTARQUIAS E FUNDACOES", "FUNDOS", "EMPRESAS DEPENDENTES"]}
           },
           {
             "name": "id_administracao",
             "type": "integer",
             "format": "default",
             "title": "ID da administração",
-            "description": "Código da administração. Valores possíveis: 1,2,3,4 ou 5"
+            "description": "Código da administração. Valores possíveis: 1,2,3,4 ou 5",
+            "constraints": {
+        "enum": [1,2,3,4,5]}
           },
           {
             "name": "administracao",
             "type": "string",
             "format": "default",
-            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquia, Fundação, Fundo ou Empresa Dependente."
+            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquia, Fundação, Fundo ou Empresa Dependente.",
+            "constraints": {
+        "enum": ["ADMINISTRACAO DIRETA", "AUTARQUIAS","FUNDACOES", "FUNDOS", "EMPRESA EST. DEPENDENTES"]}
           },
           {
             "name": "nome",
