@@ -41,9 +41,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que agrega dados das ações, que são conjuntos de operações das quais resulta a entrega de um produto (bem, serviço ou transferência financeira) que contribui para atender ao objetivo de um programa.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-categoria-economica",
@@ -65,7 +69,13 @@
             "title": "Código da Categoria Econômica",
             "description": "Código da Categoria Econômica da despesa. Valores possíveis: 0, 3, 4, 9",
             "constraints": {
-        "enum": [0,3,4,9]}
+              "enum": [
+                0,
+                3,
+                4,
+                9
+              ]
+            }
           },
           {
             "name": "nome",
@@ -74,7 +84,11 @@
             "title": "Nome da Categoria Econômica",
             "description": "Classificação da despesa quanto ao impacto econômico que ela gera, podendo ser corrente (funcionamento dos órgãos, pagamentos dos servidores, etc) ou de capital (obras, equipamentos, etc).",
             "constraints": {
-        "enum": ["DESPESAS CORRENTES", "DESPESAS DE CAPITAL"]}
+              "enum": [
+                "DESPESAS CORRENTES",
+                "DESPESAS DE CAPITAL"
+              ]
+            }
           }
         ]
       },
@@ -82,9 +96,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que agrega dados da Classificação Econômica da despesa: corrente (funcionamento dos órgãos, pagamentos dos servidores, etc) ou de capital (obras, equipamentos, etc)",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-elemento-despesa",
@@ -119,9 +137,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que agrega dados do Elemento de Despesa, que é a classificação da despesa quanto ao objeto do gasto (diárias, material de consumo, pensões, locação de imóveis, etc.).",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-empenho",
@@ -131,10 +153,14 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que contém dados sobre os empenhos",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
-    },    
+        "delimiter": ";"
+      }
+    },
     {
       "name": "dm-fonte",
       "path": "dm_fonte.csv",
@@ -168,9 +194,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados da classificação da origem dos recursos utilizados para realizar esta despesa.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-funcao-despesa",
@@ -212,9 +242,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados da classificação das áreas de atuação do setor público nas quais são gastos os recursos, tais como saúde, educação, administração, transportes, etc.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-grupo-despesa",
@@ -236,7 +270,15 @@
             "title": "Código do grupo da despesa",
             "description": "Código do grupo da despesa. Valores possíveis: 1,2,3,4,5 ou 6.",
             "constraints": {
-        "enum": [1,2,3,4,5,6]}
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ]
+            }
           },
           {
             "name": "nome",
@@ -245,7 +287,15 @@
             "title": "Nome do grupo da despesa",
             "description": "Classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.).",
             "constraints": {
-        "enum": ["PESSOAL E ENCARGOS SOCIAIS", "JUROS E ENCARGOS DA DIVIDA", "OUTRAS DESPESAS CORRENTES", "INVESTIMENTOS", "INVERSOES FINANCEIRAS", "AMORTIZACAO DA DIVIDA"]}
+              "enum": [
+                "PESSOAL E ENCARGOS SOCIAIS",
+                "JUROS E ENCARGOS DA DIVIDA",
+                "OUTRAS DESPESAS CORRENTES",
+                "INVESTIMENTOS",
+                "INVERSOES FINANCEIRAS",
+                "AMORTIZACAO DA DIVIDA"
+              ]
+            }
           }
         ]
       },
@@ -253,9 +303,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que contém dados da classificação da despesa quanto ao objeto do gasto (pessoal, juros, amortização da dívida, investimentos, etc.).",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-item-despesa",
@@ -290,9 +344,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela que contém dados sobre o item de despesa, que é a classificação da despesa quanto ao desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc).",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-modalidade-aplicacao",
@@ -327,9 +385,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados da modalidade de aplicação, que é a classificação que indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-procedencia",
@@ -351,7 +413,18 @@
             "title": "Código da procedência",
             "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9.",
             "constraints": {
-        "enum": [1,2,3,4,5,6,7,8,9]}
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            }
           },
           {
             "name": "nome",
@@ -360,24 +433,32 @@
             "title": "Nome da procedência",
             "description": "Nome que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
             "constraints": {
-        "enum": ["RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO",
-"RECURSOS RECEBIDOS DE OUTRA UNIDADE ORCAMENTARIA DO ORCAMENTO FISCAL PARA LIVRE UTILIZACAO",
-"RECURSOS RECEBIDOS PARA CONTRAPARTIDA",
-"RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA",
-"RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
-"RECURSOS RECEBIDOS PARA CONTRAPARTIDA DE OPERACAO DE CREDITO",
-"RECURSOS RECEBIDOS PARA AUXILIOS DOENCA, FUNERAL, ALIMENTACAO, TRANSPORTE E FARDAMENTO",
-"RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
-"RECURSOS RECEBIDOS PARA PRECATORIOS E SENTENCAS JUDICIAIS"]}
-      }]
+              "enum": [
+                "RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO",
+                "RECURSOS RECEBIDOS DE OUTRA UNIDADE ORCAMENTARIA DO ORCAMENTO FISCAL PARA LIVRE UTILIZACAO",
+                "RECURSOS RECEBIDOS PARA CONTRAPARTIDA",
+                "RECURSOS RECEBIDOS PARA ATENDIMENTO DE DEMANDAS DE PARTICIPACAO CIDADA",
+                "RECURSOS RECEBIDOS PARA BENEFICIOS PREVISTOS NO ART.39 DA LC 64/2002",
+                "RECURSOS RECEBIDOS PARA CONTRAPARTIDA DE OPERACAO DE CREDITO",
+                "RECURSOS RECEBIDOS PARA AUXILIOS DOENCA, FUNERAL, ALIMENTACAO, TRANSPORTE E FARDAMENTO",
+                "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
+                "RECURSOS RECEBIDOS PARA PRECATORIOS E SENTENCAS JUDICIAIS"
+              ]
+            }
+          }
+        ]
       },
       "title": "Procedência",
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados da procedência dos recursos, que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-programa",
@@ -418,9 +499,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados dos programas, que são conjuntos de ações para atender um problema ou demanda da sociedade.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-subfuncao",
@@ -462,9 +547,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados da subfunção, que identifica a natureza básica das ações que se aglutinam em funções.",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-tempo-diario",
@@ -520,9 +609,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados de data",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-tipo-documento",
@@ -557,9 +650,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-unidade-orcamentaria",
@@ -595,7 +692,13 @@
             "title": "Id do grupo de administração",
             "description": "Código do grupo da administração. Valores possíveis: 1,2,4 ou 5",
             "constraints": {
-        "enum": [1,2,4,5]}
+              "enum": [
+                1,
+                2,
+                4,
+                5
+              ]
+            }
           },
           {
             "name": "grupo_administracao",
@@ -604,7 +707,13 @@
             "title": "Nome do grupo de administração",
             "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes.",
             "constraints": {
-        "enum": ["ADMINISTRACAO DIRETA", "AUTARQUIAS E FUNDACOES", "FUNDOS", "EMPRESAS DEPENDENTES"]}
+              "enum": [
+                "ADMINISTRACAO DIRETA",
+                "AUTARQUIAS E FUNDACOES",
+                "FUNDOS",
+                "EMPRESAS DEPENDENTES"
+              ]
+            }
           },
           {
             "name": "id_administracao",
@@ -613,7 +722,14 @@
             "title": "ID da administração",
             "description": "Código da administração. Valores possíveis: 1,2,3,4 ou 5",
             "constraints": {
-        "enum": [1,2,3,4,5]}
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
           },
           {
             "name": "administracao",
@@ -621,7 +737,14 @@
             "format": "default",
             "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquia, Fundação, Fundo ou Empresa Dependente.",
             "constraints": {
-        "enum": ["ADMINISTRACAO DIRETA", "AUTARQUIAS","FUNDACOES", "FUNDOS", "EMPRESA EST. DEPENDENTES"]}
+              "enum": [
+                "ADMINISTRACAO DIRETA",
+                "AUTARQUIAS",
+                "FUNDACOES",
+                "FUNDOS",
+                "EMPRESA EST. DEPENDENTES"
+              ]
+            }
           },
           {
             "name": "nome",
@@ -636,9 +759,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados sobre a unidade orçamentária responsável pela despesa",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "dm-favorecido",
@@ -680,9 +807,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "Tabela com dados do beneficiário da despesa",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     },
     {
       "name": "ft-despesa",
@@ -868,9 +999,13 @@
       "format": "text/csv",
       "encoding": "utf-8",
       "description": "tabela que relaciona as chaves numéricas das demais tabelas-dimensão aos valores empenhados, liquidados e pagos",
-      "missingValues": ["NA", ""],
+      "missingValues": [
+        "NA",
+        ""
+      ],
       "dialect": {
-      "delimiter": ";"}
+        "delimiter": ";"
+      }
     }
   ],
   "keywords": [
