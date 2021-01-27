@@ -26,7 +26,11 @@
             "type": "string",
             "format": "default",
             "title": "Código da Ação",
-            "description": "Código da Ação. Contém 4 algarismos que podem variar pelo ano de exercício de cada ação"
+            "description": "Código da Ação. Contém 4 algarismos que podem variar pelo ano de exercício de cada ação",
+            "missingValues": ["0"],
+            "constraints": {
+              "pattern": "^\\d{4}$"
+            }
           },
           {
             "name": "nome",
