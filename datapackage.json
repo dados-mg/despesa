@@ -39,7 +39,10 @@
             "title": "Nome da Ação",
             "description": "Conjunto de operações das quais resulta a entrega de um produto (bem, serviço ou transferência financeira) que contribui para atender ao objetivo de um programa."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_acao"
+       ]
       },
       "title": "Ação",
       "format": "text/csv",
@@ -94,7 +97,10 @@
               ]
             }
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_categ_econ"
+       ]
       },
       "title": "Categoria Econômica",
       "format": "text/csv",
@@ -135,7 +141,10 @@
             "description": "classificação da despesa quanto ao objeto do gasto (diárias, material de consumo, pensões, locação de imóveis, etc.).",
             "title": "Nome do elemento de despesa"
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_elemento"
+       ]
       },
       "title": "Elemento de despesa",
       "format": "text/csv",
@@ -151,8 +160,15 @@
     },
     {
       "name": "dm-empenho",
+      "path": "dm-empenho.csv",
       "profile": "tabular-data-resource",
-      "schema": {},
+      "schema": {
+        "fields":
+        [],
+      "primaryKey": [
+          "id_empenho"
+       ]
+      },
       "title": "Empenho",
       "format": "text/csv",
       "encoding": "utf-8",
@@ -192,7 +208,10 @@
             "title": "Nome da fonte",
             "description": "Origem dos recursos utilizados para realizar a despesa."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_fonte"
+       ]
       },
       "title": "Fonte",
       "format": "text/csv",
@@ -240,7 +259,10 @@
             "title": "Nome da função da despesa",
             "description": "Áreas de atuação do setor público nas quais são gastos os recursos, tais como saúde, educação, administração, transportes, etc."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_funcao"
+       ]
       },
       "title": "Função",
       "format": "text/csv",
@@ -301,7 +323,10 @@
               ]
             }
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_grupo"
+       ]
       },
       "title": "Grupo da despesa",
       "format": "text/csv",
@@ -342,7 +367,10 @@
             "title": "Nome do item de despesa",
             "description": "Classificação da despesa quanto ao desdobramento do elemento de despesa (material gráfico, medicamentos, diárias, etc)."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_item"
+       ]
       },
       "title": "Item de despesa",
       "format": "text/csv",
@@ -383,7 +411,10 @@
             "title": "Nome da modalidade de aplicação",
             "description": "Classificação que indica se os recursos são aplicados diretamente por órgãos ou entidades no âmbito da mesma esfera de Governo ou por outro ente da Federação."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_modalidade_aplic"
+       ]
       },
       "title": "Modalidade de aplicação",
       "format": "text/csv",
@@ -450,7 +481,10 @@
               ]
             }
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_procedencia"
+       ]
       },
       "title": "Procedência",
       "format": "text/csv",
@@ -497,7 +531,10 @@
             "title": "Nome do programa",
             "description": "Denominação do conjunto de ações para atender um problema ou demanda da sociedade."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_programa"
+       ]
       },
       "title": "Programa",
       "format": "text/csv",
@@ -545,7 +582,10 @@
             "title": "Nome da subfunção",
             "description": "Identifica a natureza básica das ações que se aglutinam em funções."
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_subfuncao"
+       ]
       },
       "title": "Subfunção",
       "format": "text/csv",
@@ -607,7 +647,10 @@
             "title": "Data formatada",
             "description": "Data formato dd/mm/aaaa"
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_tempo"
+       ]
       },
       "title": "Tempo Diário",
       "format": "text/csv",
@@ -648,7 +691,10 @@
             "title": "Nome do tipo do documento",
             "description": "Nome do tipo do documento que identifica as operações possíveis no processo de execução da despesa"
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_tipo_documento"
+       ]
       },
       "title": "Tipo de documento",
       "format": "text/csv",
@@ -757,7 +803,10 @@
             "title": "Nome da unidade orçamentária",
             "description": "Órgão ou entidade que realiza a despesa"
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_unidade_orc"
+       ]
       },
       "title": "Unidade orçamentária",
       "format": "text/csv",
@@ -805,7 +854,10 @@
             "title": "Nome do favorecido",
             "description": "Beneficiário da despesa"
           }
-        ]
+        ],
+        "primaryKey": [
+          "id_favorecido"
+       ]
       },
       "title": "Favorecido",
       "format": "text/csv",
@@ -997,7 +1049,105 @@
             "format": "default",
             "title": "Valor pago"
           }
-        ]
+        ],
+        "foreignKeys": [
+          {
+            "fields": "id_tempo",
+            "reference": {
+              "resource": "dm-tempo-diario",
+              "fields": "id_tempo"}
+            },
+          { 
+          	"fields": "id_categ_econ",
+            "reference": {
+              "resource": "dm-categoria-economica",
+              "fields": "id_categ_econ"}
+            },
+          {
+          	"fields": "id_grupo",
+            "reference": {
+              "resource": "dm-grupo-despesa",
+              "fields": "id_grupo"}
+            }, 
+          {
+          	"fields": "id_elemento",
+            "reference": {
+              "resource": "dm-elemento-despesa",
+              "fields": "id_elemento"}
+            }, 
+          {
+          	"fields": "id_item",
+            "reference": {
+              "resource": "dm-item-despesa",
+              "fields": "id_item"}
+            }, 
+          { 
+          	"fields": "id_fonte",
+            "reference": {
+              "resource": "dm-fonte",
+              "fields": "id_fonte"}
+            }, 
+          {
+          	"fields": "id_modalidade_aplic",
+            "reference": {
+              "resource": "dm-modalidade-aplicacao",
+              "fields": "id_modalidade_aplic"}
+            }, 
+          {
+          	"fields": "id_funcao",
+            "reference": {
+              "resource": "dm-funcao-despesa",
+              "fields": "id_funcao"}
+            }, 
+          {
+          	"fields": "id_subfuncao",
+            "reference": {
+              "resource": "dm-subfuncao",
+              "fields": "id_subfuncao"}
+            }, 
+          {
+           	 "fields": "id_programa",
+            "reference": {
+              "resource": "dm-programa",
+              "fields": "id_programa"}
+            }, 
+          {
+          	"fields": "id_acao",
+            "reference": {
+              "resource": "dm-acao",
+              "fields": "id_acao"}
+            }, 
+          {
+          	"fields": "id_procedencia",
+            "reference": {
+              "resource": "dm-procedencia",
+              "fields": "id_procedencia"}
+            }, 
+          {
+          	"fields": "id_unidade_orc",
+            "reference": {
+              "resource": "dm-unidade-orcamentaria",
+              "fields": "id_unidade_orc"}
+            }, 
+          {
+          	"fields": "id_favorecido",
+            "reference": {
+              "resource": "dm-favorecido",
+              "fields": "id_favorecido"}
+            }, 
+          {
+          	"fields": "id_empenho",
+            "reference": {
+              "resource": "dm-empenho",
+              "fields": "id_empenho"}
+            },
+          {  
+          	"fields": "id_tipo_documento",
+            "reference": {
+              "resource": "dm-tipo-documento",
+              "fields": "id_tipo_documento"}
+            }
+       ]
       },
       "title": "Despesa",
       "format": "text/csv",
