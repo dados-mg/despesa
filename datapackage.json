@@ -736,7 +736,10 @@
             "type": "integer",
             "format": "default",
             "title": "Código da unidade orçamentária",
-            "description": "Código da unidade orçamentária"
+            "description": "Código representativo da unidade orçamentária",
+           "constraints": {
+              "pattern": "^\\d{5}$"
+            }
           },
           {
             "name": "id_grupo_administracao",
@@ -788,14 +791,16 @@
             "name": "administracao",
             "type": "string",
             "format": "default",
-            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquia, Fundação, Fundo ou Empresa Dependente.",
+            "description": "Nome do grupo da categoria da pessoa jurídica da administração.",
             "constraints": {
               "enum": [
-                "ADMINISTRACAO DIRETA",
-                "AUTARQUIAS",
-                "FUNDACOES",
-                "FUNDOS",
-                "EMPRESA EST. DEPENDENTES"
+                "AUTARQUIA",
+                "CONSELHO",
+                "EMPRESA CONTROLADA",
+                "EMPRESA ESTADUAL DEPENDENTE",
+                "FUNDACAO",
+                "SECRETARIA",
+                "ÓRGÃO AUTÔNOMO"
               ]
             }
           },
@@ -803,7 +808,7 @@
             "name": "nome",
             "type": "string",
             "format": "default",
-            "title": "Nome da unidade orçamentária",
+            "title": "Nome completo da unidade orçamentária",
             "description": "Órgão ou entidade que realiza a despesa"
           }
         ],
