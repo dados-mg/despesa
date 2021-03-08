@@ -449,15 +449,17 @@
             "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9.",
             "constraints": {
               "enum": [
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9
+                00,
+                01,
+                02,
+                03,
+                04,
+                05,
+                06,
+                07,
+                08,
+                09,
+                10
               ]
             }
           },
@@ -466,7 +468,7 @@
             "type": "string",
             "format": "default",
             "title": "Nome da procedência",
-            "description": "Nome que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
+            "description": "Denominação da procedência dos recursos orçamentários.",
             "constraints": {
               "enum": [
                 "RECURSOS RECEBIDOS PARA LIVRE UTILIZACAO",
@@ -477,7 +479,8 @@
                 "RECURSOS RECEBIDOS PARA CONTRAPARTIDA DE OPERACAO DE CREDITO",
                 "RECURSOS RECEBIDOS PARA AUXILIOS DOENCA, FUNERAL, ALIMENTACAO, TRANSPORTE E FARDAMENTO",
                 "RECURSOS RECEBIDOS PARA EMENDAS PARLAMENTARES",
-                "RECURSOS RECEBIDOS PARA PRECATORIOS E SENTENCAS JUDICIAIS"
+                "RECURSOS RECEBIDOS PARA PRECATORIOS E SENTENCAS JUDICIAIS",
+                "RECURSOS DECORRENTES DA DESVINCULAÇÃO DE RECEITAS CONFORME A EC 93/2016"
               ]
             }
           }
@@ -489,7 +492,7 @@
       "title": "Procedência",
       "format": "text/csv",
       "encoding": "utf-8",
-      "description": "Tabela com dados da procedência dos recursos, que identifica a origem e a utilização dos recursos. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
+      "description": "Tabela com dados da procedência dos recursos orçamentários. Ex.: se os recursos são para livre utilização, se foram transferidos de outra unidade orçamentária, se são para contrapartida a convênios, etc.",
       "missingValues": [
         "NA",
         ""
