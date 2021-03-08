@@ -446,7 +446,7 @@
             "type": "integer",
             "format": "default",
             "title": "Código da procedência",
-            "description": "Código da procedência dos recursos. Valores possíveis: 1,2,3,4,5,6,7,8 ou 9.",
+            "description": "Código da procedência dos recursos",
             "constraints": {
               "enum": [
                 00,
