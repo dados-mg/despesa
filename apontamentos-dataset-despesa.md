@@ -106,6 +106,10 @@ h) é preciso haver mudança de leiaute e/ou partição de arquivos?
 
 3. GRP de-para
 
+3.1. Campos adicionais nas tabelas: representar exatamente como estão ou haverá grau de liberdade para definição de quantas e quais serão as colunas das tabelas dimensão dos novos conjuntos espelhados no GRP? Exemplo: ver tabela dm-unidade-orcamentaria
+
+3.2. Como o 'contexto' afetará as decisões da questão 3.1. Exemplo: como ficará a tabela anterior 'dm-tempo-diario'? A nova consulta 'exercício' exige a seleção de um contexto para ser gerada (lançamento contábil, saldo contábil, despesa anulação, despesa empenhada, despesa liquidada, FINANCEIRA, PROGRAMAÇÃO, RECEITA, RESTOS A PAGAR )
+
 
 4. fontes para versão simplificada da despesa: transparencia internacional, OKBR, [card com padrões Portugal e Buenos Aires])(https://trello.com/c/JIRHfLlD)
 

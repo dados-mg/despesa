@@ -742,56 +742,22 @@
             }
           },
           {
-            "name": "id_grupo_administracao",
-            "type": "integer",
-            "format": "default",
-            "title": "Id do grupo de administração",
-            "description": "Código do grupo da administração. Valores possíveis: 1,2,4 ou 5",
-            "constraints": {
-              "enum": [
-                1,
-                2,
-                4,
-                5
-              ]
-            }
-          },
-          {
-            "name": "grupo_administracao",
+            "name": "tipo_administracao",
             "type": "string",
             "format": "default",
-            "title": "Nome do grupo de administração",
-            "description": "Nome do grupo da categoria da pessoa jurídica da administração: Administração Direta, Autarquias e Fundações, Fundos ou Empresas Dependentes.",
+            "title": "Tipo do órgão ou entidade da Administração",
+            "description": "Tipo do órgão ou entidade da Administração",
             "constraints": {
               "enum": [
                 "ADMINISTRACAO DIRETA",
-                "AUTARQUIAS E FUNDACOES",
-                "FUNDOS",
-                "EMPRESAS DEPENDENTES"
-              ]
+                "ADMINISTRACAO INDIRETA"]
             }
           },
           {
-            "name": "id_administracao",
-            "type": "integer",
-            "format": "default",
-            "title": "ID da administração",
-            "description": "Código da administração. Valores possíveis: 1,2,3,4 ou 5",
-            "constraints": {
-              "enum": [
-                1,
-                2,
-                3,
-                4,
-                5
-              ]
-            }
-          },
-          {
-            "name": "administracao",
+            "name": "classificacao_juridica_administracao",
             "type": "string",
             "format": "default",
-            "description": "Nome do grupo da categoria da pessoa jurídica da administração.",
+            "description": "Nome da categoria da pessoa jurídica da administração.",
             "constraints": {
               "enum": [
                 "AUTARQUIA",
